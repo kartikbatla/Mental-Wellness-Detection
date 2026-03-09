@@ -76,6 +76,7 @@ anger
 fear
 surprise
 love
+
 2️⃣ Emotional Trend Analysis
 
 The system tracks emotional changes over time to compute:
@@ -83,6 +84,7 @@ The system tracks emotional changes over time to compute:
 emotional stability index
 stress probability
 emotional patterns
+
 3️⃣ Questionnaire Analysis
 
 The questionnaire responses are scored and normalized to produce a mental wellness score.

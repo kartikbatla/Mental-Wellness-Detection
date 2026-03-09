@@ -15,7 +15,7 @@ label_map = {
 }
 
 MODEL_PATH = os.path.join(BASE_DIR, "models", "emotion_model.pkl")
-Vector_Path = os.path.join(BASE_DIR, "vectorizer", "vectorizer.pkl")
+Vector_Path = os.path.join(BASE_DIR, "models", "vectorizer.pkl")
 model = pickle.load(open(MODEL_PATH, "rb"))
 vectorizer = pickle.load(open(Vector_Path, "rb"))
 

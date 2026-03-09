@@ -1,5 +1,9 @@
 import pickle
 from preprocess import clean_text
+import os
+import pickle
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 label_map = {
     0: "sadness",
@@ -10,8 +14,10 @@ label_map = {
     5: "surprise"
 }
 
-model = pickle.load(open("C:\\Users\\batla\\OneDrive\\Desktop\\coding\\mental wellness\\models\\emotion_model.pkl", "rb"))
-vectorizer = pickle.load(open("C:\\Users\\batla\\OneDrive\\Desktop\\coding\\mental wellness\\models\\vectorizer.pkl", "rb"))
+MODEL_PATH = os.path.join(BASE_DIR, "models", "emotion_model.pkl")
+Vector_Path = os.path.join(BASE_DIR, "vectorizer", "vectorizer.pkl")
+model = pickle.load(open(MODEL_PATH, "rb"))
+vectorizer = pickle.load(open(Vector_Path, "rb"))
 
 def predict_emotion_distribution(text):
     cleaned = clean_text(text)

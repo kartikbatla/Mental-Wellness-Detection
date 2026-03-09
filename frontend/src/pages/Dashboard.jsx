@@ -15,7 +15,7 @@ export default function Dashboard() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/weekly-summary")
+    fetch("https://mental-wellness-api.onrender.com/weekly-summary")
       .then(res => res.json())
       .then(data => setData(data));
   }, []);

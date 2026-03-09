@@ -63,13 +63,9 @@ Backend - FastAPI, Python, Machine Learning, Scikit-learn, NLTK, Pandas, NumPy
 
 Database - SQLite
 
-Deployment
+📂 Project Structure
 
-Vercel (Frontend)
-Render (Backend)
-📂 Project Structure 
 <img width="421" height="684" alt="image" src="https://github.com/user-attachments/assets/5a91b786-c8b6-40b3-8152-c1149a8197f0" />
-
 
 📊 Machine Learning Workflow 
 1️⃣ Emotion Prediction - The journal text is analyzed using an emotion classification model to detect emotions such as:

@@ -49,7 +49,7 @@ export default function CheckIn({ journalText, setActive }) {
     setLoading(true);
 
     try {
-      const response = await fetch("https://mental-wellness-api.onrender.com/analyze", {
+      const response = await fetch("https://mental-wellness-detection-2.onrender.com/analyze", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

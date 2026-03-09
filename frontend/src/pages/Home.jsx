@@ -4,7 +4,7 @@ export default function Home() {
 
   async function fetchQuote() {
     try {
-      const response = await fetch("http://127.0.0.1:8000/quote");
+      const response = await fetch("https://mental-wellness-api.onrender.com/quote");
       const data = await response.json();
       setQuote(data.quote);
     } catch {
